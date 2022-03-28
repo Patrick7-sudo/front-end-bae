@@ -11,6 +11,14 @@ function GoogleBody() {
   const [height, setHeight] = useState(window.innerHeight);
   const [inputField, setInputField] = useState("hello world");
 
+// function GoogleBody(){
+//     const [height, setHeight] = useState(window.innerHeight);
+//     const [inputField, setInputField] = useState('')
+//     useEffect(()=>{
+//         function height(){
+//             setHeight(window.innerHeight);
+//         }
+
   function checkGeoLocation() {
     navigator.geolocation.getCurrentPosition(
       function (position) {
@@ -31,6 +39,7 @@ function GoogleBody() {
       setHeight(window.innerHeight);
     }
     window.addEventListener("resize", height);
+
 
     height();
   }, [height]);
