@@ -24,7 +24,7 @@ function GoogleBody(){
         >
           <div className={style.bodyMainWrapper}>
             {/* google image */}
-            <img src={image} alt="google mircophone"></img>
+            <img src={image} alt="google mircophone" className={style.imgGoogle}></img>
 
             {/* search box section */}
             <div className={style.inputBoxWrapper}>
