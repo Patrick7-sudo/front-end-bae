@@ -6,7 +6,7 @@ import microphoneImg from "./googlemicrophone.png"
 
 function GoogleBody(){
     const [height, setHeight] = useState(window.innerHeight);
-    const [inputField, setInputField] = useState('hello world')
+    const [inputField, setInputField] = useState('')
     useEffect(()=>{
         function height(){
             setHeight(window.innerHeight);

@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import GoogleBody from "./googleBody/googlBody";
 import SimpleMap from "./map";
+import Navbar from "./googleNavbar/googleNavbar"
 
 function App() {
   const [showResult, setShowResult] = useState(false);
@@ -26,6 +27,7 @@ function App() {
   }
   return (
     <div className="App">
+      <Navbar/>
       <GoogleBody />
       {checkGeoLocation()}
       {showResult === "Map" ? (
