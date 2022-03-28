@@ -1,4 +1,5 @@
 import './App.css';
+import GoogleBody from './googleBody/googlBody';
 
 function App() {
 
@@ -10,6 +11,7 @@ function checkGeoLocation() {
 }
   return (
     <div className="App">
+      <GoogleBody/>
       {checkGeoLocation()}
     </div>
   );
